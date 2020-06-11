@@ -22,8 +22,8 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 public class PedidoController {
 
-	private final PedidoServicio pedidoServicio;
-	private final PaginationLinksUtils paginationLinksUtils;
+	private final PedidoServicio pedidoServicio = new PedidoServicio();
+	private final PaginationLinksUtils paginationLinksUtils = new PaginationLinksUtils();
 	
 	
 	@GetMapping("/")

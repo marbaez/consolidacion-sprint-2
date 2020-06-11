@@ -26,7 +26,7 @@ public class FicherosController {
 	private static final Logger logger = LoggerFactory.getLogger(FicherosController.class);
 
 	
-	private final StorageService storageService;
+	private final StorageService storageService = null;
 	
 	
 	@GetMapping(value="/files/{filename:.+}")
